@@ -1,14 +1,103 @@
-:root { color-scheme: light dark; }
-* { box-sizing: border-box; }
-html, body { height: 100%; margin: 0; }
-body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, 'Apple Color Emoji', 'Segoe UI Emoji'; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
 
-.container { min-height: 100vh; display: flex; flex-direction: column; padding: 24px; gap: 16px; }
-.header { display: flex; flex-direction: column; gap: 4px; }
-.header h1 { margin: 0; font-size: 1.5rem; }
-.header p { margin: 0; opacity: 0.7; }
+body {
+  background-color: #f6f7fb;
+  color: #1a1a1a;
+}
 
-.frameWrap { flex: 1; min-height: 60vh; border: 1px solid #e5e7eb22; border-radius: 12px; overflow: hidden; background: #0b0b0b08; }
-.frameWrap iframe { width: 100%; height: 100%; border: 0; }
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 32px;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
 
-.loading { display: grid; place-items: center; min-height: 50vh; opacity: 0.7; }
+.logo {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #ffffff;
+}
+
+.nav {
+  display: flex;
+  gap: 12px;
+}
+
+.nav-btn {
+  background: transparent;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #666;
+  transition: all 0.3s ease;
+}
+
+.nav-btn.active,
+.nav-btn:hover {
+  background: #eeeaff;
+  color: #5a2be7;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.profile {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #ccc;
+}
+
+.date {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Main */
+.main-content {
+  padding: 32px;
+}
+
+.section-header h2 {
+  color: #888;
+  font-weight: 400;
+}
+
+.section-header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 24px;
+}
+
+/* Iframe Container */
+.iframe-container {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  height: calc(100vh - 200px);
+}
+
+.iframe-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
