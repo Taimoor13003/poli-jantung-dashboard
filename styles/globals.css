@@ -8,6 +8,10 @@
 body {
   background-color: #f6f7fb;
   color: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: system-ui, sans-serif;
 }
 
 /* Header */
