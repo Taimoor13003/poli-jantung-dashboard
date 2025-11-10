@@ -2,9 +2,10 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 export default function Header() {
-
+  const pathname = usePathname();
   const [currentDate, setCurrentDate] = useState("");
 
   useEffect(() => {
@@ -24,13 +25,13 @@ export default function Header() {
 
         <nav className="nav">
           <Link href="/">
-            <button className="nav-btn active">Dashboard</button>
+            <button className={`nav-btn ${pathname === '/' ? 'active' : ''}`}>Dashboard</button>
           </Link>
           <Link href="/data-pasien">
-            <button className="nav-btn">Data Pasien</button>
+            <button className={`nav-btn ${pathname === '/data-pasien' ? 'active' : ''}`}>Data Pasien</button>
           </Link>
           <Link href="/data-penyakit">
-            <button className="nav-btn">Data Penyakit</button>
+            <button className={`nav-btn ${pathname === '/data-penyakit' ? 'active' : ''}`}>Data Penyakit</button>
           </Link>
           <button className="nav-btn">Tenaga Medis</button>
           <button className="nav-btn">Efisiensi Layanan</button>
