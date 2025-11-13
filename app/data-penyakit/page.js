@@ -1,5 +1,17 @@
 export default function DataPenyakit () {
-return (
-  <h1>Data Penyakit</h1>
-)
+
+ return (
+    <>
+      {/* Main Section */}
+      <main className="main-content">
+        {/* Section Header + Button */}
+        <div className="section-header">
+          <h1>Dashboard Data Pasien</h1>
+        
+        </div>
+        {/* Iframe Container */}
+       
+      </main>
+    </>
+  );
 }
