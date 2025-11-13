@@ -1,3 +1,5 @@
+import DataPasienReport from "../../components/DataPasienReport";
+
 export default function DataPasien() {
 
 
@@ -11,7 +13,7 @@ export default function DataPasien() {
         
         </div>
         {/* Iframe Container */}
-       
+       <DataPasienReport/>
       </main>
     </>
   );
