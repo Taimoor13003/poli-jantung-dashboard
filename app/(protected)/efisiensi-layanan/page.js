@@ -1,4 +1,4 @@
-import EfisiensiLayanan from "../../components/EfisiensiLayanan";
+import EfisiensiLayanan from "../../../components/EfisiensiLayanan";
 export default function Efisiensi() {
 
 
