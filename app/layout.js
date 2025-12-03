@@ -4,14 +4,13 @@ export const metadata = {
 };
 
 import '../styles/globals.css';
-import Header from './header';
+import { AuthProvider } from '../components/AuthProvider';
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Header/>
-        {children}
+        <AuthProvider>{children}</AuthProvider>
       </body>
     </html>
   );

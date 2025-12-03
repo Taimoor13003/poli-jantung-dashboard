@@ -1,6 +1,6 @@
 "use client";
 
-import LookerReport from "../components/LookerReport";
+import LookerReport from "../../components/LookerReport";
 import { usePathname } from 'next/navigation';
 
 export default function Page() {

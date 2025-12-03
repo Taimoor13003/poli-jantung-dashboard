@@ -3,10 +3,12 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { useAuth } from '../components/AuthProvider';
 
 export default function Header() {
   const pathname = usePathname();
   const [currentDate, setCurrentDate] = useState("");
+  const { user, signOut } = useAuth();
 
   useEffect(() => {
     const now = new Date();
@@ -44,7 +46,12 @@ export default function Header() {
 
         <div className="user-info">
           <span className="date">{currentDate}</span>
-          <div className="profile"></div>
+          <div className="user-badge">
+            <span className="user-email">{user?.email}</span>
+          </div>
+          <button className="signout-btn" onClick={() => signOut()}>
+            Keluar
+          </button>
         </div>
     </header>
     )
