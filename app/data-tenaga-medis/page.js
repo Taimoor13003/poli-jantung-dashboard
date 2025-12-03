@@ -1,5 +1,5 @@
-import DataPenyakitReport from "../../components/DataPenyakit";
-export default function DataPenyakit() {
+import DataTenagaMedis from "../../components/DataTenagaMedis";
+export default function DataTenaga() {
 
 
   return (
@@ -8,14 +8,12 @@ export default function DataPenyakit() {
       <main className="main-content">
         {/* Section Header + Button */}
         <div className="section-header">
-          <h1>Data Penyakit</h1>
+          <h1>Data Tenaga Medis</h1>
         
         </div>
         {/* Iframe Container */}
-        <DataPenyakitReport/>
+       <DataTenagaMedis/>
       </main>
     </>
   );
 }
-
-

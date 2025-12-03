@@ -1,12 +1,12 @@
 "use client";
 
-const REPORT_URL = 'https://lookerstudio.google.com/embed/reporting/d8b65737-2cdc-42ad-92dd-de5c4f67ba06/page/GIofF';
-export default function DataPasienReport() {
+const REPORT_URL = "https://lookerstudio.google.com/embed/reporting/4423bca0-5c1b-4abf-84fa-1711e5ba87db/page/mPugF" ;
+export default function EfisiensiLayanan() {
   return (
     <div className="iframe-container">
       <iframe
         width="600"
-        height="360"
+        height="300"
         src={REPORT_URL}
         frameBorder="0"
         style={{ border: 0 }}
@@ -17,4 +17,6 @@ export default function DataPasienReport() {
     </div>
   );
 }
+
+
 

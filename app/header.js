@@ -33,10 +33,12 @@ export default function Header() {
           <Link href="/data-penyakit">
             <button className={`nav-btn ${pathname === '/data-penyakit' ? 'active' : ''}`}>Data Penyakit</button>
           </Link>
-          <Link href="/dokter">
-            <button className={`nav-btn ${pathname === '/dokter' ? 'active' : ''}`}>Tenaga Medis</button>
+          <Link href="/data-tenaga-medis">
+            <button className={`nav-btn ${pathname === '/data-tenaga-medis' ? 'active' : ''}`}>Tenaga Medis</button>
           </Link>
-          <button className="nav-btn">Efisiensi Layanan</button>
+          <Link href="/efisiensi-layanan">
+            <button className={`nav-btn ${pathname === '/efisiensi-layanan' ? 'active' : ''}`}>Efisiensi Layanan</button>
+          </Link>
           <button className="nav-btn">Analisis & Insight</button>
         </nav>
 
