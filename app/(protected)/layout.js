@@ -19,7 +19,7 @@ export default function ProtectedLayout({ children }) {
     return (
       <div className="auth-loading">
         <div className="spinner" />
-        <p>Memastikan sesi Anda...</p>
+        <p>Sedang memproses data...</p>
       </div>
     );
   }
